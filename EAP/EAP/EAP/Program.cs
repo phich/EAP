@@ -16,7 +16,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using EAP.Helpers;
-using DAL;
+using EAP.Service.DatabaseInitializer;
+
 
 namespace EAP
 {

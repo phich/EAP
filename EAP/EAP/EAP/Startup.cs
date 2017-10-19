@@ -15,24 +15,29 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
-using DAL;
-using DAL.Models;
+
 using System.Net;
 using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Http;
 using AutoMapper;
 using Newtonsoft.Json;
-using DAL.Core;
-using DAL.Core.Interfaces;
+
 using Microsoft.AspNetCore.Authorization;
 using EAP.ViewModels;
 using EAP.Helpers;
 using EAP.Policies;
 using AspNet.Security.OpenIdConnect.Primitives;
 using AspNet.Security.OAuth.Validation;
+using EAP.Model;
+using EAP.Model.Models;
+using EAP.Service.Core;
+using EAP.Service.Core.Interfaces;
+using EAP.Service.DatabaseInitializer;
+using EAP.Service.UnitOfWork;
 using Microsoft.AspNetCore.Identity;
 using Swashbuckle.AspNetCore.Swagger;
-using AppPermissions = DAL.Core.ApplicationPermissions;
+using AppPermissions = EAP.Service.Core.ApplicationPermissions;
+using EAP.Service.UnitOfWork.Interfaces;
 
 namespace EAP
 {
@@ -51,7 +56,7 @@ namespace EAP
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<ApplicationDbContext>(options =>
+            services.AddDbContext<EAPContext>(options =>
             {
                 options.UseSqlServer(Configuration["ConnectionStrings:DefaultConnection"], b => b.MigrationsAssembly("EAP"));
                 options.UseOpenIddict();
@@ -59,7 +64,7 @@ namespace EAP
 
             // add identity
             services.AddIdentity<ApplicationUser, ApplicationRole>()
-                .AddEntityFrameworkStores<ApplicationDbContext>()
+                .AddEntityFrameworkStores<EAPContext>()
                 .AddDefaultTokenProviders();
 
             // Configure Identity options and password complexity here
@@ -89,7 +94,7 @@ namespace EAP
             // Register the OpenIddict services.
             services.AddOpenIddict(options =>
             {
-                options.AddEntityFrameworkCoreStores<ApplicationDbContext>();
+                options.AddEntityFrameworkCoreStores<EAPContext>();
                 options.AddMvcBinders();
                 options.EnableTokenEndpoint("/connect/token");
                 options.AllowPasswordFlow();

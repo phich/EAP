@@ -11,9 +11,21 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Models\**" />
+    <EmbeddedResource Remove="Models\**" />
+    <None Remove="Models\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="ApplicationDbContext.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="2.0.0" />
-    <PackageReference Include="OpenIddict" Version="2.0.0-rc1-0669" />
-    <PackageReference Include="OpenIddict.EntityFrameworkCore" Version="2.0.0-rc1-0669" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\EAP.Model\EAP.Model.csproj" />
   </ItemGroup>
 
 </Project>

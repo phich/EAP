@@ -6,7 +6,7 @@
 // ==> Gun4Hire: contact@ebenmonney.com
 // ======================================
 
-using DAL.Models;
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,6 +14,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using DAL.Repositories.Interfaces;
+using EAP.Model.Models;
 
 namespace DAL.Repositories
 {
@@ -25,9 +26,9 @@ namespace DAL.Repositories
 
 
 
-        private ApplicationDbContext appContext
+        private EAPContext appContext
         {
-            get { return (ApplicationDbContext)_context; }
+            get { return (EAPContext)_context; }
         }
     }
 }

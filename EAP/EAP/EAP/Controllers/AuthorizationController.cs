@@ -17,10 +17,12 @@ using Microsoft.AspNetCore.Authentication;
 using AspNet.Security.OpenIdConnect.Server;
 using OpenIddict.Core;
 using AspNet.Security.OpenIdConnect.Primitives;
-using DAL.Models;
-using DAL.Core;
+
+
 using Microsoft.Extensions.Options;
 using System.Security.Claims;
+using EAP.Model.Models;
+using EAP.Service.Core;
 
 
 // For more information on enabling Web API for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860

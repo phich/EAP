@@ -15,12 +15,12 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using EAP.ViewModels;
 using AutoMapper;
-using DAL.Models;
-using DAL.Core.Interfaces;
 using EAP.Policies;
 using EAP.Helpers;
+using EAP.Model.Models;
+using EAP.Service.Core;
 using Microsoft.AspNetCore.JsonPatch;
-using DAL.Core;
+using EAP.Service.Core.Interfaces;
 
 namespace EAP.Controllers
 {

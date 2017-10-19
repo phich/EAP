@@ -11,15 +11,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using EAP.Model.Models;
 using Microsoft.EntityFrameworkCore;
-using DAL.Models;
+
 using DAL.Repositories.Interfaces;
+using EAP.Model;
 
 namespace DAL.Repositories
 {
     public class CustomerRepository : Repository<Customer>, ICustomerRepository
     {
-        public CustomerRepository(ApplicationDbContext context) : base(context)
+        public CustomerRepository(EAPContext context) : base(context)
         { }
 
 
@@ -40,9 +42,9 @@ namespace DAL.Repositories
 
 
 
-        private ApplicationDbContext appContext
+        private EAPContext appContext
         {
-            get { return (ApplicationDbContext)_context; }
+            get { return (EAPContext)_context; }
         }
     }
 }

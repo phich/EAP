@@ -8,7 +8,7 @@
 
 using DAL;
 using DAL.Core.Interfaces;
-using DAL.Models;
+
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -18,17 +18,18 @@ using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 using DAL.Core;
+using EAP.Model.Models;
 
 namespace DAL.Core
 {
     public class AccountManager : IAccountManager
     {
-        private readonly ApplicationDbContext _context;
+        private readonly EAPContext _context;
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly RoleManager<ApplicationRole> _roleManager;
 
 
-        public AccountManager(ApplicationDbContext context, UserManager<ApplicationUser> userManager, RoleManager<ApplicationRole> roleManager)
+        public AccountManager(EAPContext context, UserManager<ApplicationUser> userManager, RoleManager<ApplicationRole> roleManager)
         {
             _context = context;
             _userManager = userManager;

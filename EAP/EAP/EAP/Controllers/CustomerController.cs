@@ -11,12 +11,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using DAL;
 using EAP.ViewModels;
 using AutoMapper;
-using DAL.Models;
 using Microsoft.Extensions.Logging;
 using EAP.Helpers;
+using EAP.Service.UnitOfWork.Interfaces;
 
 namespace EAP.Controllers
 {

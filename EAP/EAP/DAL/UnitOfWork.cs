@@ -13,12 +13,13 @@ using System.Text;
 using System.Threading.Tasks;
 using DAL.Repositories;
 using DAL.Repositories.Interfaces;
+using EAP.Model;
 
 namespace DAL
 {
     public class UnitOfWork : IUnitOfWork
     {
-        readonly ApplicationDbContext _context;
+        readonly EAPContext _context;
 
         ICustomerRepository _customers;
         IProductRepository _products;
@@ -26,7 +27,7 @@ namespace DAL
 
 
 
-        public UnitOfWork(ApplicationDbContext context)
+        public UnitOfWork(EAPContext context)
         {
             _context = context;
         }

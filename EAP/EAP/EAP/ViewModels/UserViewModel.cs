@@ -6,7 +6,6 @@
 // ==> Gun4Hire: contact@ebenmonney.com
 // ======================================
 
-using DAL.Models;
 using FluentValidation;
 using EAP.Helpers;
 using Microsoft.AspNetCore.Identity;

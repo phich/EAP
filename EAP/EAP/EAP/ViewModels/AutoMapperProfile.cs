@@ -7,14 +7,15 @@
 // ======================================
 
 using AutoMapper;
-using DAL.Core;
-using DAL.Models;
+
 using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using EAP.Model.Models;
+using EAP.Service.Core;
 
 namespace EAP.ViewModels
 {

@@ -6,7 +6,6 @@
 // ==> Gun4Hire: contact@ebenmonney.com
 // ======================================
 
-using DAL.Core;
 using EAP.Helpers;
 using Microsoft.AspNetCore.Authorization;
 using System;
@@ -15,6 +14,7 @@ using System.Linq;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
+using EAP.Service.Core;
 
 namespace EAP.Policies
 {

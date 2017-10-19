@@ -1,0 +1,9 @@
+D:\project\EAP\EAP\EAP.Core\bin\Debug\netcoreapp2.0\EAP.Core.deps.json
+D:\project\EAP\EAP\EAP.Core\bin\Debug\netcoreapp2.0\EAP.Core.dll
+D:\project\EAP\EAP\EAP.Core\bin\Debug\netcoreapp2.0\EAP.Core.pdb
+D:\project\EAP\EAP\EAP.Core\obj\Debug\netcoreapp2.0\EAP.Core.csprojResolveAssemblyReference.cache
+D:\project\EAP\EAP\EAP.Core\obj\Debug\netcoreapp2.0\EAP.Core.csproj.CoreCompileInputs.cache
+D:\project\EAP\EAP\EAP.Core\obj\Debug\netcoreapp2.0\EAP.Core.AssemblyInfoInputs.cache
+D:\project\EAP\EAP\EAP.Core\obj\Debug\netcoreapp2.0\EAP.Core.AssemblyInfo.cs
+D:\project\EAP\EAP\EAP.Core\obj\Debug\netcoreapp2.0\EAP.Core.dll
+D:\project\EAP\EAP\EAP.Core\obj\Debug\netcoreapp2.0\EAP.Core.pdb

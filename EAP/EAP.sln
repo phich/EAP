@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2002
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{1008A899-1705-43A8-AD72-52F4AE21E66F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EAP", "EAP\EAP\EAP.csproj", "{3BF40DED-125A-4ECA-B5C3-784D3434E733}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "EAP\DAL\DAL.csproj", "{136E827A-65D8-45CF-B2BF-4D7C82C0FD37}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3BF40DED-125A-4ECA-B5C3-784D3434E733}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BF40DED-125A-4ECA-B5C3-784D3434E733}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BF40DED-125A-4ECA-B5C3-784D3434E733}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BF40DED-125A-4ECA-B5C3-784D3434E733}.Release|Any CPU.Build.0 = Release|Any CPU
+		{136E827A-65D8-45CF-B2BF-4D7C82C0FD37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{136E827A-65D8-45CF-B2BF-4D7C82C0FD37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{136E827A-65D8-45CF-B2BF-4D7C82C0FD37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{136E827A-65D8-45CF-B2BF-4D7C82C0FD37}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3BF40DED-125A-4ECA-B5C3-784D3434E733} = {1008A899-1705-43A8-AD72-52F4AE21E66F}
+		{136E827A-65D8-45CF-B2BF-4D7C82C0FD37} = {1008A899-1705-43A8-AD72-52F4AE21E66F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F6718693-663F-4100-9C4F-D3CFD19BE6D6}
+	EndGlobalSection
+EndGlobal
